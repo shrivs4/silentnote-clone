@@ -5,7 +5,6 @@ import PainSection from "./components/PainSection";
 import FeatureRow from "./components/FeatureRow";
 import Steps from "./components/Steps";
 import CTA from "./components/CTA";
-import Footer from "./components/Footer";
 
 export default function App() {
   return (
