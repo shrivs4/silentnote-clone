@@ -1,0 +1,62 @@
+:root {
+    --sn-purple: #5b4cf7;
+  }
+  
+  html {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .sn-page {
+    min-height: 100vh;
+    background:
+      radial-gradient(800px 500px at 15% 20%, rgba(91, 76, 247, 0.10), transparent 60%),
+      radial-gradient(700px 450px at 85% 30%, rgba(120, 180, 255, 0.12), transparent 55%),
+      linear-gradient(#fbfcff, #f5f7ff);
+    transition: background 0.3s ease;
+  }
+  
+  [data-theme="dark"] .sn-page {
+    background:
+      radial-gradient(800px 500px at 15% 20%, rgba(91, 76, 247, 0.15), transparent 60%),
+      radial-gradient(700px 450px at 85% 30%, rgba(120, 180, 255, 0.10), transparent 55%),
+      linear-gradient(#0A0E1A, #0F1525);
+  }
+  
+  .sn-glow {
+    position: relative;
+  }
+  .sn-glow::before {
+    content: "";
+    position: absolute;
+    inset: -24px;
+    background: radial-gradient(400px 220px at 30% 20%, rgba(91, 76, 247, 0.18), transparent 60%);
+    filter: blur(12px);
+    opacity: 0.7;
+    z-index: 0;
+  }
+  
+  [data-theme="dark"] .sn-glow::before {
+    background: radial-gradient(400px 220px at 30% 20%, rgba(91, 76, 247, 0.25), transparent 60%);
+    opacity: 0.5;
+  }
+  
+  .sn-soft-card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(11, 18, 32, 0.06);
+    box-shadow: 0 20px 60px rgba(11, 18, 32, 0.08);
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+  
+  [data-theme="dark"] .sn-soft-card {
+    background: rgba(20, 27, 45, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+  
